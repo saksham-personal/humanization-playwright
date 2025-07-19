@@ -1,3 +1,36 @@
+Metadata-Version: 2.4
+Name: humanization-playwright
+Version: 0.1.0
+Summary: A library for human-like interactions in Playwright automation, uses Patchright to avoid bot detection and human-like cursors and typing interactions
+Author-email: potui <saksham.kaushal.official@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/saksham-personal/humanization-playwright.git
+Project-URL: Repository, https://github.com/saksham-personal/humanization-playwright.git
+Keywords: automation,playwright,patchright,humanization,stealth,browser,web-scraping
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
+Classifier: Typing :: Typed
+Requires-Python: <3.13,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: playwright>=1.30.0
+Requires-Dist: loguru>=0.6.0
+Requires-Dist: patchright>=1.52.5
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: black>=24.0; extra == "dev"
+Requires-Dist: mypy>=1.0; extra == "dev"
+Dynamic: license-file
+
 # Humanization-Patchright
 
 [![PyPI version](https://badge.fury.io/py/Humanization-patchright.svg)](https://badge.fury.io/py/Humanization-patchright)  

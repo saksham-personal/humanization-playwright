@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+humanization/__init__.py
+humanization/core.py
+humanization_playwright.egg-info/PKG-INFO
+humanization_playwright.egg-info/SOURCES.txt
+humanization_playwright.egg-info/dependency_links.txt
+humanization_playwright.egg-info/requires.txt
+humanization_playwright.egg-info/top_level.txt
+tests/tests_core.py
