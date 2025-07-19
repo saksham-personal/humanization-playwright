@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "humanization-playwright"
+version = "0.1.0"  
+authors = [{ name = "potui", email = "saksham.kaushal.official@gmail.com" }]
+description = "A library for human-like interactions in Playwright automation, uses Patchright to avoid bot detection and human-like cursors and typing interactions"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "playwright>=1.30.0",  
+    "loguru>=0.6.0",
+"patchright>=1.52.5", ]
+
+[project.urls]
+Homepage = "https://github.com/saksham-personal/humanization-playwright.git"
+Repository = "https://github.com/saksham-personal/humanization-playwright.git"
