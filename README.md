@@ -119,13 +119,13 @@ await Humanization.move_to(locator, offset_x=10, offset_y=20, input_mode=True)
 
 ## Logging
 
-Uses Loguru for debug/info/error logs. Logs to `Humanization.log` by default (rotates at 10 MB).
+Uses Loguru for debug/info/error logs. Logs to `Humanization.log` by default (rotates at 100 MB).
 
 ## Development and Contributing
 
 1. Clone the repo: `git clone https://github.com/yourusername/humanization-patchright.git`
 2. Install editable: `pip install -e .`
-3. Run tests: `pytest` (add dev deps like pytest if needed).
+3. Run tests: `pytest` .
 4. Build: `python -m build`
 
 Contributions welcome! Open issues/PRs on GitHub for bugs/features.
