@@ -117,37 +117,13 @@ await Humanization.move_to(locator, offset_x=10, offset_y=20, input_mode=True)
 - Combine with Patchright's Chrome channel for maximum undetection.
 - Test on anti-bot sites to verify.
 
-## API Reference
-
-### Core Class: `Humanization`
-
-- `__init__(self, page: Page, config: Optional[HumanizationConfig] = None)`
-- `undetected_launch(cls, user_data_dir: str, config: Optional[HumanizationConfig] = None)`: Class method for stealth launch.
-
-### Key Methods
-
-- `move_to(locator: Locator, offset_x: Optional[int] = None, offset_y: Optional[int] = None, input_mode: bool = False) -> Tuple[float, float]`: Move mouse to element.
-- `click_at(locator: Locator, clicktype: str = "left", input_mode: bool = False)`: Click after moving.
-- `type_at(locator: Locator, text: str, ...)`: Type text human-like.
-- `backspace_at(locator: Locator, num_chars: int, ...)`: Backspace characters.
-- `hover_at(locator: Locator, dwell_time: float = 0.5)`: Hover with dwell.
-- `scroll_to(locator: Optional[Locator] = None, delta_y: Optional[int] = None)`: Scroll to element or by delta.
-- `human_wait(min_sec: float = 1.0, max_sec: float = 3.0)`: Random pause.
-- `drag_to(source_locator: Locator, target_locator: Locator)`: Drag and drop.
-- `human_correct(locator: Locator, overshoot_factor: float = 1.2)`: Overshoot and correct mouse.
-- `random_delay() -> float`: Utility for 0.7-1.0s delay.
-- `get_box(locator: Locator) -> Dict[str, float]`: Get element bounding box.
-- `get_page_dimensions() -> Dict[str, float]`: Get page size.
-
-Full docs in code comments.
-
 ## Logging
 
 Uses Loguru for debug/info/error logs. Logs to `Humanization.log` by default (rotates at 10 MB).
 
 ## Development and Contributing
 
-1. Clone the repo: `git clone https://github.com/yourusername/Humanization-patchright.git`
+1. Clone the repo: `git clone https://github.com/yourusername/humanization-patchright.git`
 2. Install editable: `pip install -e .`
 3. Run tests: `pytest` (add dev deps like pytest if needed).
 4. Build: `python -m build`
