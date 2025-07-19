@@ -2,7 +2,7 @@ import random
 import asyncio
 from typing import Tuple, List, Dict, Optional
 from playwright.async_api import Page, Locator, TimeoutError
-from patchright.async_api import expect
+from patchright.async_api import expect, async_playwright
 from loguru import logger
 from dataclasses import dataclass
 
@@ -28,6 +28,7 @@ class Humanization:
             context = await p.chromium.launch_persistent_context(
                 user_data_dir=user_data_dir,
                 channel="chrome",
+                args=["--incognito", "--disable-blink-features=AutomationControlled"],
                 headless=False,
                 no_viewport=True,
             )
