@@ -29,7 +29,7 @@ pip install humanization-playwright
 After installation, set up Patchright's browser for optimal undetection:
 
 ```bash
-patchright install chrome  # Recommended for better stealth than Chromium
+playwright install chrome  # Recommended for better stealth than Chromium
 ```
 
 **Requirements**:
