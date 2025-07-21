@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "humanization-playwright"
-version = "0.1.0"
+version = "0.1.2"
 authors = [{ name = "potui", email = "saksham.kaushal.official@gmail.com" }]
 description = "A library for human-like interactions in Playwright automation, uses Patchright to avoid bot detection and human-like cursors and typing interactions"
 readme = "README.md"

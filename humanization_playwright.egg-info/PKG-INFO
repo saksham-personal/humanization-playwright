@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: humanization-playwright
-Version: 0.1.0
+Version: 0.1.2
 Summary: A library for human-like interactions in Playwright automation, uses Patchright to avoid bot detection and human-like cursors and typing interactions
 Author-email: potui <saksham.kaushal.official@gmail.com>
 License-Expression: MIT
@@ -27,13 +27,14 @@ Requires-Dist: loguru>=0.6.0
 Requires-Dist: patchright>=1.52.5
 Provides-Extra: dev
 Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.20.0; extra == "dev"
 Requires-Dist: black>=24.0; extra == "dev"
 Requires-Dist: mypy>=1.0; extra == "dev"
 Dynamic: license-file
 
-# Humanization-Patchright
+# Humanization-Playwright
 
-[![PyPI version](https://badge.fury.io/py/Humanization-patchright.svg)](https://badge.fury.io/py/Humanization-patchright)  
+[![PyPI version](https://badge.fury.io/py/humanization-playwright.svg)](https://badge.fury.io/py/humanization-playwright)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 A Python library for simulating human-like browser interactions (mouse movements, typing, clicking, etc.) in automation scripts. Built on top of [Patchright](https://pypi.org/project/patchright/), a patched and undetected version of Playwright, this library helps evade bot detection by adding randomness, Bezier curve-based mouse paths, variable delays, and other human-mimicking behaviors. Ideal for web scraping, testing, or automation tasks requiring stealth.
@@ -56,13 +57,13 @@ This library is designed as a drop-in enhancement for Patchright scripts, focusi
 Install via PyPI:
 
 ```bash
-pip install humanization-patchright
+pip install humanization-playwright
 ```
 
 After installation, set up Patchright's browser for optimal undetection:
 
 ```bash
-patchright install chrome  # Recommended for better stealth than Chromium
+playwright install chrome  # Recommended for better stealth than Chromium
 ```
 
 **Requirements**:
@@ -156,7 +157,7 @@ Uses Loguru for debug/info/error logs. Logs to `Humanization.log` by default (ro
 
 ## Development and Contributing
 
-1. Clone the repo: `git clone https://github.com/yourusername/humanization-patchright.git`
+1. Clone the repo: `git clone https://github.com/saksham-personal/humanization-patchright.git`
 2. Install editable: `pip install -e .`
 3. Run tests: `pytest` .
 4. Build: `python -m build`

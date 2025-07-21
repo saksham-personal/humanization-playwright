@@ -8,4 +8,4 @@ humanization_playwright.egg-info/SOURCES.txt
 humanization_playwright.egg-info/dependency_links.txt
 humanization_playwright.egg-info/requires.txt
 humanization_playwright.egg-info/top_level.txt
-tests/tests_core.py
+tests/test_core.py

@@ -7,3 +7,5 @@ __pycache__/
 *.pkl
 *.pyd   
 dist*
+.env*
+*.log
