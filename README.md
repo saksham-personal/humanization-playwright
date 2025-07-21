@@ -1,6 +1,6 @@
 # Humanization-Playwright
 
-[![PyPI version](https://badge.fury.io/py/humanization-patchright.svg)](https://badge.fury.io/py/humanization-playwright)  
+[![PyPI version](https://badge.fury.io/py/humanization-playwright.svg)](https://badge.fury.io/py/humanization-playwright)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 A Python library for simulating human-like browser interactions (mouse movements, typing, clicking, etc.) in automation scripts. Built on top of [Patchright](https://pypi.org/project/patchright/), a patched and undetected version of Playwright, this library helps evade bot detection by adding randomness, Bezier curve-based mouse paths, variable delays, and other human-mimicking behaviors. Ideal for web scraping, testing, or automation tasks requiring stealth.
