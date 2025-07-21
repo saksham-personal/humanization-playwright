@@ -1,0 +1,13 @@
+2025-07-21 10:31:59.744 | INFO     | humanization.core:move_to:110 - Starting move_to
+2025-07-21 10:31:59.744 | ERROR    | humanization.core:get_box:54 - Bounding box error: Unsupported type: <class 'unittest.mock.MagicMock'>
+2025-07-21 10:31:59.779 | INFO     | humanization.core:move_to:110 - Starting move_to
+2025-07-21 10:31:59.779 | ERROR    | humanization.core:get_box:54 - Bounding box error: Unsupported type: <class 'unittest.mock.MagicMock'>
+2025-07-21 10:34:45.672 | INFO     | humanization.core:move_to:127 - Starting move_to
+2025-07-21 10:34:45.672 | WARNING  | humanization.core:get_box:54 - Skipping visibility check for locator type: <class 'unittest.mock.MagicMock'>
+2025-07-21 10:34:45.789 | INFO     | humanization.core:move_to:127 - Starting move_to
+2025-07-21 10:34:45.790 | WARNING  | humanization.core:get_box:54 - Skipping visibility check for locator type: <class 'unittest.mock.MagicMock'>
+2025-07-21 10:35:32.692 | INFO     | humanization.core:move_to:127 - Starting move_to
+2025-07-21 10:35:32.692 | WARNING  | humanization.core:get_box:54 - Skipping visibility check for locator type: <class 'unittest.mock.MagicMock'>
+2025-07-21 10:35:32.846 | INFO     | humanization.core:move_to:127 - Starting move_to
+2025-07-21 10:35:32.847 | WARNING  | humanization.core:get_box:54 - Skipping visibility check for locator type: <class 'unittest.mock.MagicMock'>
+2025-07-21 10:35:32.990 | WARNING  | humanization.core:type_at:192 - Skipping focus check for locator type: <class 'unittest.mock.MagicMock'>

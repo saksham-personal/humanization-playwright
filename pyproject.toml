@@ -4,38 +4,46 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "humanization-playwright"
-version = "0.1.0"  
+version = "0.1.0"
 authors = [{ name = "potui", email = "saksham.kaushal.official@gmail.com" }]
 description = "A library for human-like interactions in Playwright automation, uses Patchright to avoid bot detection and human-like cursors and typing interactions"
 readme = "README.md"
-requires-python = ">=3.8, <3.13" 
-license = "MIT" 
+requires-python = ">=3.8, <3.13"
+license = "MIT"
 keywords = ["automation", "playwright", "patchright", "humanization", "stealth", "browser", "web-scraping"]
 classifiers = [
-    "Development Status :: 3 - Alpha",  
-    "Intended Audience :: Developers",
-    "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Topic :: Software Development :: Libraries :: Python Modules",
-    "Topic :: Internet :: WWW/HTTP :: Browsers",
-    "Typing :: Typed", 
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Internet :: WWW/HTTP :: Browsers",
+  "Typing :: Typed",
 ]
 dependencies = [
-    "playwright>=1.30.0",  
-    "loguru>=0.6.0",
-"patchright>=1.52.5", ]
-
-optional-dependencies.dev = [
-    "pytest>=8.0",
-    "black>=24.0",
-    "mypy>=1.0",
+  "playwright>=1.30.0",
+  "loguru>=0.6.0",
+  "patchright>=1.52.5",
 ]
 
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-asyncio>=0.20.0",
+  "black>=24.0",
+  "mypy>=1.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+
 [project.urls]
-Homepage = "https://github.com/saksham-personal/humanization-playwright.git"
+Homepage   = "https://github.com/saksham-personal/humanization-playwright.git"
 Repository = "https://github.com/saksham-personal/humanization-playwright.git"
