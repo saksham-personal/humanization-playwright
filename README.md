@@ -1,6 +1,6 @@
 # Humanization-Patchright
 
-[![PyPI version](https://badge.fury.io/py/Humanization-patchright.svg)](https://badge.fury.io/py/Humanization-patchright)  
+[![PyPI version](https://badge.fury.io/py/humanization-patchright.svg)](https://badge.fury.io/py/Humanization-patchright)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 A Python library for simulating human-like browser interactions (mouse movements, typing, clicking, etc.) in automation scripts. Built on top of [Patchright](https://pypi.org/project/patchright/), a patched and undetected version of Playwright, this library helps evade bot detection by adding randomness, Bezier curve-based mouse paths, variable delays, and other human-mimicking behaviors. Ideal for web scraping, testing, or automation tasks requiring stealth.
@@ -112,7 +112,7 @@ await Humanization.move_to(locator, offset_x=10, offset_y=20, input_mode=True)
 
 ### Stealth Best Practices
 
-- Always use `Humanization.undetected_launch` for persistent contexts.
+- Always use `humanization.undetected_launch` for persistent contexts.
 - Run headless=False and avoid custom user agents/headers.
 - Combine with Patchright's Chrome channel for maximum undetection.
 - Test on anti-bot sites to verify.
@@ -123,7 +123,7 @@ Uses Loguru for debug/info/error logs. Logs to `Humanization.log` by default (ro
 
 ## Development and Contributing
 
-1. Clone the repo: `git clone https://github.com/yourusername/humanization-patchright.git`
+1. Clone the repo: `git clone https://github.com/saksham-personal/humanization-patchright.git`
 2. Install editable: `pip install -e .`
 3. Run tests: `pytest` .
 4. Build: `python -m build`
